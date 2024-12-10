@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ajedrez Interactivo</h1>
+    </header>
+    <main>
+        <section id="tablero">
+            <table>
+                <!-- Fila 1 -->
+                <tr>
+                    <td id="A1"><img src="imagenes/torre_negra.png" alt="Torre Negra"></td>
+                    <td id="B1"><img src="imagenes/caballo_negro.png" alt="Caballo Negro"></td>
+                    <td id="C1"><img src="imagenes/alfil_negro.png" alt="Alfil Negro"></td>
+                    <td id="D1"><img src="imagenes/reina_negra.png" alt="Reina Negra"></td>
+                    <td id="E1"><img src="imagenes/rey_negro.png" alt="Rey Negro"></td>
+                    <td id="F1"><img src="imagenes/alfil_negro.png" alt="Alfil Negro"></td>
+                    <td id="G1"><img src="imagenes/caballo_negro.png" alt="Caballo Negro"></td>
+                    <td id="H1"><img src="imagenes/torre_negra.png" alt="Torre Negra"></td>
+                </tr>
+                <!-- Fila 2 -->
+                <tr>
+                    <td id="A2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="B2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="C2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="D2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="E2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="F2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="G2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                    <td id="H2"><img src="imagenes/peon_negro.png" alt="Peón Negro"></td>
+                </tr>
+                <!-- Fila 3 a Fila 6: Vacías -->
+                <tr><td id="A3"></td><td id="B3"></td><td id="C3"></td><td id="D3"></td><td id="E3"></td><td id="F3"></td><td id="G3"></td><td id="H3"></td></tr>
+                <tr><td id="A4"></td><td id="B4"></td><td id="C4"></td><td id="D4"></td><td id="E4"></td><td id="F4"></td><td id="G4"></td><td id="H4"></td></tr>
+                <tr><td id="A5"></td><td id="B5"></td><td id="C5"></td><td id="D5"></td><td id="E5"></td><td id="F5"></td><td id="G5"></td><td id="H5"></td></tr>
+                <tr><td id="A6"></td><td id="B6"></td><td id="C6"></td><td id="D6"></td><td id="E6"></td><td id="F6"></td><td id="G6"></td><td id="H6"></td></tr>
+                <!-- Fila 7 -->
+                <tr>
+                    <td id="A7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="B7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="C7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="D7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="E7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="F7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="G7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                    <td id="H7"><img src="imagenes/peon_blanco.png" alt="Peón Blanco"></td>
+                </tr>
+                <!-- Fila 8 -->
+                <tr>
+                    <td id="A8"><img src="imagenes/torre_blanca.png" alt="Torre Blanca"></td>
+                    <td id="B8"><img src="imagenes/caballo_blanco.png" alt="Caballo Blanco"></td>
+                    <td id="C8"><img src="imagenes/alfil_blanco.png" alt="Alfil Blanco"></td>
+                    <td id="D8"><img src="imagenes/reina_blanca.png" alt="Reina Blanca"></td>
+                    <td id="E8"><img src="imagenes/rey_blanco.png" alt="Rey Blanco"></td>
+                    <td id="F8"><img src="imagenes/alfil_blanco.png" alt="Alfil Blanco"></td>
+                    <td id="G8"><img src="imagenes/caballo_blanco.png" alt="Caballo Blanco"></td>
+                    <td id="H8"><img src="imagenes/torre_blanca.png" alt="Torre Blanca"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="movimientos">
+            <h2>Mover Piezas</h2>
+            <form>
+                <label for="origen">Casilla Origen:</label>
+                <input type="text" id="origen" placeholder="Ej: A2">
+                <label for="destino">Casilla Destino:</label>
+                <input type="text" id="destino" placeholder="Ej: A3">
+                <button type="button" id="mover">Mover</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
